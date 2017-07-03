@@ -65,5 +65,10 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 		return new LinkedList<>(Arrays.asList(new DyeBlueArmor(), new DyeOrangeArmor(), 
 				new BlueArmorDialogue(), new StartQuest(), new OrangeArmorDialogue(), new NormalArmorDialogue()));
 	}
+	
+	public String toString()
+	{
+		return getMissionName();
+	}
 
 }
