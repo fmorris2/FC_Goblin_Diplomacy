@@ -68,7 +68,7 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 	
 	public String toString()
 	{
-		return getMissionName();
+		return "Goblin Diplomacy";
 	}
 
 }
