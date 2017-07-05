@@ -15,7 +15,7 @@ public enum GoblinDiplomacySettings
 		new QuestState
 		(
 			new SettingBool(FCGoblinDiplomacy.SETTING, 0, true, Order.EQUALS),
-			new InvBankBool(GoblinDiplomacyRequirements.BLUE_MAIL, 1, false, false)
+			new InvBankBool(GoblinDiplomacyRequirements.BLUE_MAIL, 1, InvBankBool.TYPE.NOT_IN_EITHER, true)
 		)
 	),
 	
@@ -24,7 +24,7 @@ public enum GoblinDiplomacySettings
 		new QuestState
 		(
 			new SettingBool(FCGoblinDiplomacy.SETTING, 0, true, Order.EQUALS),
-			new InvBankBool(GoblinDiplomacyRequirements.ORANGE_MAIL, 1, false, false)
+			new InvBankBool(GoblinDiplomacyRequirements.ORANGE_MAIL, 1, InvBankBool.TYPE.NOT_IN_EITHER, true)
 		)
 	),
 	
@@ -41,7 +41,7 @@ public enum GoblinDiplomacySettings
 		new QuestState
 		(
 			new SettingBool(FCGoblinDiplomacy.SETTING, 3, true, Order.EQUALS),
-			new InvBankBool(GoblinDiplomacyRequirements.ORANGE_MAIL, 1, false, true)
+			new InvBankBool(GoblinDiplomacyRequirements.ORANGE_MAIL, 1, InvBankBool.TYPE.IN_ONE, true)
 		)
 	),
 	
@@ -50,7 +50,7 @@ public enum GoblinDiplomacySettings
 		new QuestState
 		(
 			new SettingBool(FCGoblinDiplomacy.SETTING, 4, true, Order.EQUALS),
-			new InvBankBool(GoblinDiplomacyRequirements.BLUE_MAIL, 1, false, true)
+			new InvBankBool(GoblinDiplomacyRequirements.BLUE_MAIL, 1, InvBankBool.TYPE.IN_ONE, true)
 		)
 	),
 	
@@ -59,7 +59,7 @@ public enum GoblinDiplomacySettings
 		new QuestState
 		(
 			new SettingBool(FCGoblinDiplomacy.SETTING, 5, true, Order.EQUALS),
-			new InvBankBool(GoblinDiplomacyRequirements.GOBLIN_MAIL, 1, false, true)
+			new InvBankBool(GoblinDiplomacyRequirements.GOBLIN_MAIL, 1, InvBankBool.TYPE.IN_ONE, true)
 		)
 	),
 	
