@@ -14,6 +14,7 @@ import scripts.fc.missions.fcgoblindiplomacy.tasks.impl.DyeOrangeArmor;
 import scripts.fc.missions.fcgoblindiplomacy.tasks.impl.NormalArmorDialogue;
 import scripts.fc.missions.fcgoblindiplomacy.tasks.impl.OrangeArmorDialogue;
 import scripts.fc.missions.fcgoblindiplomacy.tasks.impl.StartQuest;
+import scripts.fc.missions.fcgoblindiplomacy.tasks.impl.WithdrawItems;
 
 public class FCGoblinDiplomacy extends QuestScriptManager
 {
@@ -62,7 +63,7 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 	@Override
 	public LinkedList<Task> getTaskList()
 	{
-		return new LinkedList<>(Arrays.asList(new DyeBlueArmor(), new DyeOrangeArmor(), 
+		return new LinkedList<>(Arrays.asList(new WithdrawItems(), new DyeBlueArmor(), new DyeOrangeArmor(), 
 				new BlueArmorDialogue(), new StartQuest(), new OrangeArmorDialogue(), new NormalArmorDialogue()));
 	}
 	

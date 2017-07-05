@@ -1,5 +1,6 @@
 package scripts.fc.missions.fcgoblindiplomacy.tasks.impl;
 
+import org.tribot.api2007.Banking;
 import org.tribot.api2007.Inventory;
 
 import scripts.fc.api.interaction.impl.items.ItemOnItem;
@@ -17,6 +18,9 @@ public class DyeBlueArmor extends Task implements ItemsRequiredTask
 	@Override
 	public boolean execute()
 	{
+		if(Banking.isBankScreenOpen())
+			return Banking.close();
+		
 		return new ItemOnItem("Use", "Blue dye", "Goblin mail").execute() 
 				&& FCTiming.waitCondition(() -> Inventory.getCount(GoblinDiplomacyRequirements.BLUE_MAIL) > 0, 1200);
 	}
