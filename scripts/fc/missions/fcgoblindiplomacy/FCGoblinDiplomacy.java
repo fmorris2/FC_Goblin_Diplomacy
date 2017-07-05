@@ -3,6 +3,8 @@ package scripts.fc.missions.fcgoblindiplomacy;
 import java.util.Arrays;
 import java.util.LinkedList;
 
+import org.tribot.api2007.Game;
+
 import scripts.fc.framework.quest.QuestScriptManager;
 import scripts.fc.framework.requirement.Requirement;
 import scripts.fc.framework.script.FCMissionScript;
@@ -28,7 +30,7 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 	@Override
 	public boolean hasReachedEndingCondition()
 	{
-		return false;
+		return Game.getSetting(SETTING) >= 6;
 	}
 
 	@Override
