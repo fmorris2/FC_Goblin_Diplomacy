@@ -74,4 +74,10 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 		return "Goblin Diplomacy";
 	}
 
+	@Override
+	public boolean canStart()
+	{
+		return true;
+	}
+
 }
