@@ -1,8 +1,5 @@
 package scripts.fc.missions.fcgoblindiplomacy.data;
 
-import java.util.List;
-
-import scripts.fc.framework.mission.Mission;
 import scripts.fc.framework.quest.Order;
 import scripts.fc.framework.quest.SettingBool;
 import scripts.fc.framework.requirement.item.ItemRequirement;
@@ -43,11 +40,4 @@ public class GoblinDiplomacyRequirements extends ItemRequirement
 			.when(new SettingBool(FCGoblinDiplomacy.SETTING, 5, true, Order.BEFORE_EQUALS))
 		};
 	}
-
-	@Override
-	public List<Mission> getReqMissions()
-	{
-		return null;
-	}
-
 }
