@@ -80,4 +80,9 @@ public class FCGoblinDiplomacy extends QuestScriptManager
 		return true;
 	}
 
+	@Override
+	public int getQuestPointReward() {
+		return 5;
+	}
+
 }
